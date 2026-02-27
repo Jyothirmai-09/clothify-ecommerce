@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clothify - Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand">Clothify</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html" class="active">Cart</a>
+      <a href="contact.html">Contact Us</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <div id="cart-summary"></div>
+
+    <div class="coupon-row">
+      <input type="text" id="coupon" placeholder="Have a coupon? (e.g., SAVE10)" />
+      <button id="apply-coupon" class="cta-btn outline">Apply</button>
+    </div>
+
+    <button id="place-order-btn" class="cta-btn">Place Order</button>
+
+    <form id="order-form" style="display:none;">
+      <h3>Enter Your Details</h3>
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="address" placeholder="Address" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <button type="submit" class="cta-btn">Submit Order</button>
+    </form>
+
+    <div id="order-success" style="display:none;">
+      <h3>Order Placed Successfully</h3>
+      <p>Thank you for shopping with us!</p>
+    </div>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

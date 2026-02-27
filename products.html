@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clothify - Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand">Clothify</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact Us</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Our Clothing Collection</h2>
+
+    <section class="filters">
+      <input type="text" id="search" placeholder="Search products..." />
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="tops">Tops</option>
+        <option value="outerwear">Outerwear</option>
+        <option value="dresses">Dresses</option>
+        <option value="bottoms">Bottoms</option>
+        <option value="hoodies">Hoodies</option>
+        <option value="trousers">Trousers</option>
+      </select>
+
+      <label class="price-filter">
+        <span>Max Price: ₹<span id="price-value">10000</span></span>
+        <input type="range" id="price" min="0" max="10000" step="100" value="10000" />
+      </label>
+
+      <select id="sort">
+        <option value="default">Sort by</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="name-asc">Name: A → Z</option>
+        <option value="name-desc">Name: Z → A</option>
+      </select>
+    </section>
+
+    <div class="products" id="product-list">
+      <!-- Skeletons while loading -->
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </div>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

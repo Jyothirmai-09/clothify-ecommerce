@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clothify - Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand">Clothify</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:seepanajyothirmai60@gmail.com">seepanajyothirmai60@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jyothirmai-seepana" target="_blank" rel="noreferrer noopener">Jyothirmai Seepana</a></p>
+    </div>
+
+    <form id="contact-form" class="contact-form">
+      <h3>Send us a message</h3>
+      <input type="text" id="c-name" placeholder="Your Name" required />
+      <input type="email" id="c-email" placeholder="Your Email" required />
+      <textarea id="c-message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="cta-btn" type="submit">Send</button>
+    </form>
+
+    <div id="contact-success" class="hidden success-msg">
+      ✅ Thanks! We’ll get back to you soon.
+    </div>
+  </main>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
