@@ -4,8 +4,7 @@ Clothify is a simple and stylish shopping-themed e-commerce website built using 
 It features a dynamic product listing, interactive shopping cart, order placement form, and a modern responsive design.
 
 ---
-<img width="1909" height="881" alt="Screenshot 2025-07-26 113834" src="https://github.com/user-attachments/assets/2656baaf-80bc-4e4f-8a36-00847f323303" />
-
+<img width="1917" height="875" alt="Screenshot 2026-02-27 224734" src="https://github.com/user-attachments/assets/810995ee-eea1-4255-86ea-0f1122d18d73" />
 
 
 
